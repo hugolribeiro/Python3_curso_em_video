@@ -15,7 +15,8 @@ amount_games = int(input('Input here how many games do you want to see: '))
 
 for game in range(0, amount_games):
     print(f'\n        Game number {game+1}\n')
-    actual_game = sample(list(range(1, 61)), 6)
+    actual_game = sorted(sample(list(range(1, 61)), 6))
     print(*actual_game, sep=' - ')
+    games_drawn.append(actual_game)
     sleep(1)
     print('-' * 30)
