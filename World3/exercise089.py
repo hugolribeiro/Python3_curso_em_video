@@ -10,12 +10,12 @@ amount_students = int(input('How many students? '))
 
 for student in range(amount_students):
     student_data = [
-        input(f'Name of the {student+1}º student: '), [float(input('First score: ')), float(input('Second score: '))
-    ]]
+        input(f'Name of the {student + 1}º student: '), [float(input('First score: ')), float(input('Second score: '))
+                                                         ]]
     bank_notes.append(student_data)
     print('-' * 30)
 
 for student in bank_notes:
-    print(f'{student[0]}\'s average score: {sum(student[1])/2}')
+    print(f'{student[0]}\'s average score: {sum(student[1]) / 2}')
     print(f'Individual scores: {student[1]}')
-    print('-'*30)
+    print('-' * 30)
