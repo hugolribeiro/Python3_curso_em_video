@@ -9,8 +9,11 @@ student = dict()
 student['Name'] = input('Name: ')
 student['Average'] = float(input(f'Average of the student {student["Name"]}: '))
 if student['Average'] >= 7:
-    print('Approved')
+    student['Status'] = 'Approved'
 elif 3 <= student['Average'] < 7:
-    print('Recovery')
+    student['Status'] = 'Recovery'
 else:
-    print('Reproved')
+    student['Status'] = 'Reproved'
+print('-' * 30)
+for key, value in student.items():
+    print(f'{key} : {value}')
