@@ -42,7 +42,7 @@ for person in people:
         print(f'{person.get("Name")}', end=';  ')
 average_age = total_age / amount_people
 print(f'\n- The average age is: {average_age}')
-print(r'\- The list of people that are above the average is: \n')
+print('\- The list of people that are above the average is: \n')
 for person in people:
     if person.get('Age') > average_age:
         print(f'Name = {person.get("Name")}', end='   ')
